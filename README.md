@@ -35,7 +35,20 @@ All content lives in **`src/data/index.ts`** — it's the single source of truth
 - Work & education timeline
 - Projects
 
-No other files need to be touched for content changes.
+No other files need to be touched for content changes. The CV is served from `public/cv.html`.
+
+## Docker
+
+```bash
+docker compose up --build   # Builds and serves on http://localhost:8080
+```
+
+Or manually:
+
+```bash
+docker build -t portfolio .
+docker run -p 8080:80 portfolio
+```
 
 ## Project Structure
 
@@ -44,7 +57,7 @@ src/
 ├── App.tsx               # Root component — assembles all sections
 ├── data/index.ts         # All content (edit this to personalize)
 ├── components/
-│   ├── sections/         # Hero, About, Skills, Timeline, Projects, Contact
+│   ├── sections/         # Hero, Stats, MarqueeSection, Timeline, Projects, Contact
 │   └── ui/               # Button, Card, Badge
 └── lib/utils.ts          # cn() helper (clsx + tailwind-merge)
 ```
