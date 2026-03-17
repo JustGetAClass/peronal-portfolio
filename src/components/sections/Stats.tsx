@@ -5,7 +5,6 @@ const stats = [
   { value: 5,  suffix: '+', label: 'Years Experience' },
   { value: 20, suffix: '+', label: 'Projects Delivered' },
   { value: 3,  suffix: '',  label: 'Industries Served' },
-  { value: 1,  suffix: '',  label: 'Microsoft Internship' },
 ]
 
 function useCounter(target: number, started: boolean, duration = 1200) {
@@ -49,7 +48,7 @@ export function Stats() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-3 gap-8"
         >
           {stats.map((s) => (
             <StatItem key={s.label} {...s} started={inView} />
