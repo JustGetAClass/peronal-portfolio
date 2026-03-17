@@ -27,7 +27,7 @@ export const timeline: TimelineEntry[] = [
     type: 'work',
     title: 'Software & Solutions Engineer – Telematics',
     org: 'WAW Technology',
-    period: 'Jan 2026 - Present',
+    period: 'Jan 2026 - Mar 2026',
     description: 'Telematics Solutions Engineer specializing in asset tracking and software development. Experienced in building and integrating IoT and GPS-based systems, developing backend services.',
   },
   {
